@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('genel-gorunum.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 35%; /* Adjusted to fit all sections nicely on mobile */
+    width: 100%;  /* Full width on mobile */
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    margin: 0;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 25%;
+    width: 100%;  /* Full width on mobile */
+    padding: 20px;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text-container p {
+    margin-top: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex: 1 1 40%; /* 2 items per row on mobile cards */
+    background-color: aqua;
+    font-size: larger;
+}
+
+h1, p, h2, h3 {
+    margin: 0;
+}
+
+.cards p{
+    margin:0;
+}
+
+
+/* ==========================================
+   2. DESKTOP VIEW (Min-width: 1279px)
+   ================================---------- */
+@media (min-width: 1024px) {
+    body {
+        flex-direction: row;     /* Side-by-side row config for desktop */
+        flex-wrap: wrap;         /* Allows cards container to drop below */
+    }
+
+    .main-container {
+        height: 100%;
+        width: 30%;              /* Takes left side on desktop */
+    }
+
+    .text-container {
+        display: flex;
+        align-items: flex-start;
+        font-size: 30px;
+        height: 100%;
+        width: 70%;              /* Takes right side next to main-container */
+    }
+
+    .cards {
+        font-size: 21px;
+        margin: 0 auto;
+        margin-top: 80px;
+        gap: 40px;
+        height: 30%;
+        width: 60%;             /* Spans full width underneath */
+    }
+
+    .text-container .cards{
+        display: flex;
+        align-items: center;
+    }
+}
