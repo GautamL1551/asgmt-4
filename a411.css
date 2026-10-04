@@ -1,0 +1,97 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('wooden-background-3840x2160-15617.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.product-image{
+    height: 300px;
+    width: 300px;
+    background-image: url('[CITYPNG.COM]Pair of Apple AirPods Pro 3rd Generation - 3000x3000.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+}
+
+p{
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    padding-left: 20px;
+    width: 80%;
+}
+
+h1{
+    font-family: sans-serif;
+    color: white;
+    padding: 20px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    height: 30px;
+    width: 150px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 30px;
+    border: none;
+    background-color: burlywood;
+}
+
+@media (min-width:1024px) {
+    body{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 100%;
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 60%;
+        height: 100%;
+        padding-left: 100px;
+    }
+
+    p{
+        width: 90%;
+    }
+    
+}
